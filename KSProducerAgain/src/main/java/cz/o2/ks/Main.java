@@ -14,7 +14,6 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         Properties producerConfiguration = new Properties();
-        //producerConfiguration.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "mujsignal-03:9092, mujsignal-09:9093");
         producerConfiguration.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
         producerConfiguration.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         producerConfiguration.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, LongSerializer.class.getName());

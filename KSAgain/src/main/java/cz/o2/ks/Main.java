@@ -17,9 +17,7 @@ public class Main {
     public static void main(String[] args) {
         Properties streamsConfiguration = new Properties();
         streamsConfiguration.put(StreamsConfig.APPLICATION_ID_CONFIG, "kafka-streams-again");
-        //streamsConfiguration.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "mujsignal-03:9092, mujsignal-09:9093");
         streamsConfiguration.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-       // streamsConfiguration.put(StreamsConfig.ZOOKEEPER_CONNECT_CONFIG, "mujsignal-02:2181,mujsignal-03:2182");
         streamsConfiguration.put(StreamsConfig.ZOOKEEPER_CONNECT_CONFIG, "localhost:2181");
         streamsConfiguration.put(StreamsConfig.KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());
         streamsConfiguration.put(StreamsConfig.VALUE_SERDE_CLASS_CONFIG, Serdes.Long().getClass().getName());
